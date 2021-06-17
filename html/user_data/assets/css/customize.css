@@ -1,0 +1,54 @@
+/**** 
+商品一覧ページ 
+*****/
+/* 詳細ボタン */
+.ec-add--btn.ec-blockBtn--action {
+    color: #fff;
+}
+
+/* カテゴリ */
+.products-list-add--category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:50px;
+}
+.products-list-add--category li {
+    padding:3px;
+}
+
+@media screen and (max-width:780px) {
+    /* カテゴリ */
+.products-list-add--category {
+    display: block;
+    width:70%;
+    Margin:0 auto;
+    Padding-bottom: 50px;
+}
+}
+
+.ec-off1Grid {
+margin-bottom: 50px;
+}
+
+.ec-off2Grid {
+margin-bottom: 50px;
+}
+
+ec-layoutRole__main {
+margin-bottom: 50px;
+}
+
+
+.ec-productRole__description { margin-top: 4%; }
+.ec-productRole__description h3 { padding: 0.8rem 1rem; box-sizing: border-box; }
+.ec-productRole__description h3 + * { margin-top: 30px; }
+.title--left { text-align: left; }
+.title--center { text-align: center; }
+.title--right { text-align: right; }
+.title--backgroundSlategray { background-color: #708090 !important; box-shadow: 3px 3px 5px rgba(33,33,33,0.2); }
+.title--colorWhite { color:#fff; }
+.title--large { font-size: 18px !important; }
+.ec-historyRole .ec-historyRole__detail .ec-historyRole__detailTitle { font-size: 15px; }
+
+#page_homepage .font-mont.line2, .border-t.mt2 h3 { color:#1b1b1b; text-shadow:3px 3px 6px rgba(255,255,255,0.8); background: rgb(247,247,247); background: linear-gradient(45deg, rgba(247,247,247,1) 0%, rgba(235,233,233,1) 50%, rgba(237,227,227,1) 100%); font-family: 'Playfair Display', serif; }
+.border-t.mt2 h3 { padding:0.5rem 0 !important; }

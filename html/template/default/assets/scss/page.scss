@@ -1,0 +1,256 @@
+@charset "utf-8";
+@charset "utf-8";
+
+/*-------------------
+  共通
+------------------------*/
+#page_product_list,#page_contact,#page_mypage_delivery{
+    h1{
+        /*font-family: 'Cormorant Garamond', serif;*/
+        font-weight: normal;
+        letter-spacing: 2px;
+        border-bottom: none;
+        font-size: 2rem;
+        padding-top: 2.3rem;
+        span{
+            font-family: 'Noto Serif JP', serif;
+            font-size:68%;
+            display: block;
+        }
+    }
+}
+#page{
+    padding-bottom: 3rem;
+    h1{
+        /*font-family: 'Cormorant Garamond', serif;*/
+        font-weight: normal;
+        letter-spacing: 2px;
+        border-bottom: none;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 2.3rem;
+        span{
+            font-family: 'Noto Serif JP', serif;
+            font-size:68%;
+            display: block;
+        }
+        &.font-min{
+            font-family: 'Cormorant Garamond', serif;
+        }
+    }
+    h2{
+        /*font-family: 'Noto Serif JP', serif;*/
+        font-size:1.8rem;
+        letter-spacing: 2px;
+        padding:1rem 0 1rem;
+        font-weight: 400;
+        border-bottom: none;
+        text-align: left;
+    }
+    h3,h4{
+        font-family: 'Noto Serif JP', serif;
+        letter-spacing:2px;
+        padding-bottom:2rem;
+        font-weight: 200;
+    }
+    h3{font-size: 1.6rem;}
+    h4{font-size: 1.4rem;}
+    
+    p{padding-bottom: 1rem;}
+
+    .list li{
+        list-style-type: disc;
+        margin-left: 1rem;
+    }
+    .list-no li{
+        list-style-type:decimal ;
+        margin-left: 1rem;
+    }
+    
+    @media screen and (max-width: 916px){
+        margin-top:6rem;
+        h1{font-size: 2rem;}
+        h2{font-size: 1.5rem;}
+    }
+	@media screen and (max-width: 641px){
+        margin-top: 2.5rem;
+        h1{font-size: 1.5rem;margin: 2rem 0 0;}
+        h2{font-size: 1.3rem;padding-bottom: 0;}
+        section{
+            padding: 1rem 0;
+        }
+        .sp-reverse {
+            display: flex;
+            flex-wrap:wrap-reverse;
+        }
+    }/*--/641--*/ 
+picture img{width: 100%;}
+}/*--/#page--*/  
+
+/*-------------------
+  about
+------------------------*/
+#page{
+    &.about{
+        h1{font-size:2.5rem;}
+        h3{font-weight:600;}
+        .about-bottom-catch{
+            font-family: 'Noto Serif JP', serif;
+            text-align: center;
+            line-height: 2.5;
+            padding-top: 3rem;
+           p,strong{
+            font-size: 1.5rem;
+           }
+        }
+        .column{
+            display: flex;
+            img{width: 100%;}
+            .txt{
+                width: 55%;
+                padding-right: 2rem;
+                box-sizing: border-box;
+            }
+            .pict{
+                width: 45%;
+                padding-right: 1rem;
+            }
+        }
+        @media screen and (max-width: 641px){
+            .column{
+                display:block;
+                .txt,.pict{
+                    width: 100%;
+                    padding-right: 0;
+                }
+            }
+        }
+    }/*-- /about --*/
+     
+/*-------------------
+  guide
+------------------------*/
+    &.guide{
+        h2{padding-bottom: 1rem;}
+        .step li{
+            em{
+                padding: 5px 8px;
+                background:#bb665e;
+                color: #fff;
+                margin:0 5px 0 0;
+            }
+            span{
+                color:#bb665e;
+                font-weight: bold;
+            }
+        }
+        .box-pink{
+            padding: 1rem 1rem 0.5rem;
+            margin-top:0.7rem;
+            border:#bb665e solid 1px;
+        }
+        .footer-info{
+          display: flex;
+          font-size: 14px;
+          a{display: inline-block!important;}
+          li{padding-right: 1rem;}
+
+          @media screen and (max-width: 641px){
+            display: block;
+          }
+        }
+    }/*-- /guide --*/
+}/*--/#page--*/  
+
+/*-------------------
+  お手続き
+------------------------*/
+
+.ec-rectHeading{
+    padding: 1rem 0!important;
+}
+.ec-input p{ padding-bottom: 0.5rem!important;}
+
+.ec-reportHeading p{
+    font-size: 25px!important;
+    font-weight: normal!important;
+}
+.ec-off4Grid__cell a{color: #fff;}
+.ec-layoutRole__contents{
+    margin-top: 2rem;
+    @media screen and (max-width: 641px){
+        margin-top: 0;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 780px){
+.content {
+    box-sizing: border-box;
+    }
+}
+/*-------------------
+  ランディングページ
+------------------------*/
+#lp-page{
+    h1{
+        &.bg_k{background-color: black;}
+        text-align: center;
+    }
+    h2{
+        font-size: 2rem;
+        margin-top: 2.5rem;
+    }
+    h3{color: darkblue;font-size: 1.5rem;}
+    .txt-lp{
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        line-height: 3;
+    }
+    h4{
+        font-size: 1.1rem;
+    }
+    @media screen and (max-width: 916px){
+        margin-top: 3rem;
+        h1 img{width:100%}
+    }
+    @media screen and (max-width: 641px){
+        h2{
+            font-size: 1.7rem;
+        }
+        h3{font-size: 1.4rem;}
+    }
+    .box2{
+        margin-top: 4rem;
+        dl{
+            display: flex;
+            box-sizing: border-box;
+            dt,dd{width: 50%;padding: 1rem;
+                box-sizing: border-box;}
+            dt img{
+                width: 100%;
+                box-shadow: 2px 2px 2px #ccc;
+            }
+            @media screen and (max-width: 641px){
+             display: block;
+             dt,dd{width: 100%;padding: 1rem;}
+             dd{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+              }
+
+            .detail_btn{margin: 0 auto;}
+            }
+        }
+        small{display: block;}
+        .detail_btn{
+            color: white;
+            padding: 1rem;
+            width: 200px;
+            background:#ffc3bc;
+            margin-top: 1rem;
+            text-align: center;
+        }
+    }
+}
