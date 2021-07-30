@@ -1,0 +1,26 @@
+@media print {
+  #catch-wrap { min-height:100px !important; font-size: 20px !important; }
+    .title-page { padding-left: 0; color:$base-color;
+    strong { font-size: 30px !important; }
+  }
+  .single-alliance_partner { font-size: 11px;
+    #main article { overflow: hidden; font-size: 11px; line-height: 1.65; display: block;
+      .title-article { text-align: left;}
+      .photo { float: left; width: 32%; 
+        li { margin-bottom: 15px; }
+      }
+      .cnt-body { float: left; width: 65%; padding-left: 30px;  }
+      .history,.war-history { padding: 0; margin-left:1rem;  
+        ul li { font-size: 11px; line-height: 1.65; }
+      }
+      dl { line-height: 1.6; }
+      dt { font-weight: bold; }
+      .btn { display: none; }
+    }
+  }
+
+
+  header,footer,#page-header,#side-bar,#partner-company {
+    display: none;
+  }
+}
