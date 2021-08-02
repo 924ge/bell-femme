@@ -1,0 +1,56 @@
+@charset "utf-8";
+// ===================================================================
+// flexbox
+// ===================================================================
+
+@mixin flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+//左揃い
+@mixin flex-start {
+  justify-content: flex-start;
+}
+
+//右揃い
+@mixin flex-end {
+  justify-content: flex-end;
+}
+
+//中央揃い
+@mixin flex-center {
+  justify-content: flex-center;
+}
+
+//横幅均等揃い
+@mixin flex-between {
+  justify-content: space-between;
+}
+
+@mixin flex-align-items {
+  align-items: center;
+}
+
+
+// ===================================================================
+// transition
+// ===================================================================
+@mixin transition {
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+@mixin transition-items {
+  transition: all 0.35s ease;
+}
+
+
+@mixin stripe45dig($color01,$color02,$size) {
+  background-color: $color02;
+  background-image: linear-gradient(-45deg,$color01 25%,$color02 25%, $color02 50%,$color01 50%, $color01 75%,$color02 75%, $color02 );
+  background-size: $size;
+}

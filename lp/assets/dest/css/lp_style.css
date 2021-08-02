@@ -117,7 +117,7 @@ body .layout-center {
   body .l-flex--md {
     display: flex;
   }
-  body .md-none {
+  body .md-none, body .md--hidden {
     display: none;
   }
 }
@@ -165,7 +165,7 @@ body .layout-center {
 }
 
 .header--catch {
-  background: url("/html/lp/images/bg_catch.jpg") no-repeat center center;
+  background: url("../../../images/bg_catch.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -195,13 +195,13 @@ body .layout-center {
   .header--catch .text--howtoJoin {
     position: absolute;
     bottom: -60px;
-    max-width: 55vw;
+    max-width: 750px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .header--catch {
-    background: url("/html/lp/images/bg_catch_mobile.jpg") no-repeat top center;
+    background: url("../../../images/bg_catch_mobile.jpg") no-repeat top center;
     background-size: contain;
   }
   .header--catch .title--page {
@@ -224,7 +224,7 @@ body .layout-center {
   display: block;
   width: 100%;
   height: 30px;
-  background: url("/html/lp/images/border-introduction.png") no-repeat center center;
+  background: url("../../../images/border-introduction.png") no-repeat center center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -473,14 +473,11 @@ body .layout-center {
 }
 
 @media only screen and (max-width: 767px) {
-  .wrap--campaignDetail .b-box {
-    padding: 0 5%;
-  }
-}
-
-@media only screen and (max-width: 767px) {
   .wrap--campaignDetail .block--campaignDetail {
     flex-direction: column;
+  }
+  .wrap--campaignDetail .block--campaignDetail .b-box {
+    padding: 0 5%;
   }
   .wrap--campaignDetail .block--campaignDetail .b-box__title {
     font-size: 5vw;
@@ -495,11 +492,11 @@ body .layout-center {
   }
   .wrap--campaignDetail .block--campaignDetail .b-box__text.text--coupon {
     margin-top: 50px;
-    font-size: 2rem;
+    font-size: 1.9rem;
     padding-left: 0;
   }
   .wrap--campaignDetail .block--campaignDetail .b-box__text.text--coupon .b-box__text__span {
-    max-width: 65vw;
+    max-width: 70vw;
     display: block;
     line-height: 1.5;
   }
@@ -597,7 +594,7 @@ body .layout-center {
   width: 40%;
   height: 3px;
   display: block;
-  background: url("/html/LP/images/bg_line_title.png") repeat-x;
+  background: url("../../../images/bg_line_title.png") repeat-x;
 }
 
 .wrap--product .b-block.block--product .b-block__text.text--catchCopy::before {
@@ -695,7 +692,7 @@ body .layout-center {
     margin: 0 2%;
   }
   .wrap--product .b-wrap__title {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     margin-top: 0;
     margin-bottom: 20px;
     padding-top: 5%;
@@ -781,11 +778,14 @@ body .layout-center {
     padding: 2%;
   }
   .wrap--product .b-block.block--andMore .b-box__title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 1.5;
+    padding-left: 12px;
   }
   .wrap--product .b-block.block--andMore .b-box__text {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 10px;
   }
 }
 
@@ -961,7 +961,7 @@ body .layout-center {
     flex: 0 1 40px;
   }
   .wrap--campaign .block--twitter .b-block__title__strong, .wrap--campaign .block--instagram .b-block__title__strong {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
   .wrap--campaign .block--twitter .b-card__figure, .wrap--campaign .block--instagram .b-card__figure {
     flex: 0 1 20%;
@@ -974,6 +974,16 @@ body .layout-center {
   }
   .wrap--campaign .block--twitter .b-card .b-box .figure--qrCode, .wrap--campaign .block--instagram .b-card .b-box .figure--qrCode {
     display: none;
+  }
+  .wrap--campaign .block--twitter .b-card .b-box__link, .wrap--campaign .block--instagram .b-card .b-box__link {
+    background-color: #ff1c89;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    margin-top: 3%;
+    border-radius: 10px;
   }
   .wrap--campaign .block--twitter .b-block__list.list--notice, .wrap--campaign .block--instagram .b-block__list.list--notice {
     line-height: 1.8;
@@ -1037,6 +1047,12 @@ body .layout-center {
   line-height: 1.7;
 }
 
+@media only screen and (max-width: 767px) {
+  .wrap--campaign .block--instagram .b-card.card--03 .b-box__hashtag__list {
+    font-size: 1.6rem;
+  }
+}
+
 .wrap--campaign .block--instagram .b-card.card--04 .b-box__message {
   background-color: #26b4fd;
   padding: 20px 10px 20px 30px;
@@ -1094,6 +1110,12 @@ body .layout-center {
   align-self: center;
   flex: 0 1 30%;
   max-width: initial;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrap--campaign .block--instagram .b-card.card--05 .b-card__figure {
+    margin-top: 6%;
+  }
 }
 
 .b-footer {

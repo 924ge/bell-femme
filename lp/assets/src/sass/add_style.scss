@@ -1,0 +1,73 @@
+@import "core/setting"; // sass 設定
+.header-logo { padding-left: 0; }
+@media #{$small} {
+  header { padding: 1rem 0 0; position: static !important;
+    .header-logo { width: initial; max-width: 69vw; padding-right: 7vw;
+      img { max-width: 100%; }
+    }
+
+    .ec-headerNavi {
+      li { flex:0 1 33.3%; margin: 0; 
+        &:not(:first-child) { border-left: 1px solid #fff; }
+      }
+      img { display: none; }
+      span { border: none; }
+      a { width: 100%; padding: 3px; box-sizing: border-box; border: none; background-color: #ddd; text-align: center; font-size: 2vw; }
+    }
+  }
+
+  .work-slide-wrap { margin-top: 0 }
+
+  .best-seller {
+    ul li { width: initial; flex:0 1 49%;
+      &:nth-child(even) { margin-left: 2%; }
+    }
+    dd { text-align: left !important; }
+  }
+
+  #page_homepage {
+     h2 + ul { margin-top: -2rem; }
+     .about {
+       dd { text-align: left; font-size: 4vw;
+        br { display: none; }
+        h3 { font-size: 5vw; }
+        .font-l.block.mb1 { margin-bottom:1.5rem; text-align: center; display: block; }
+       }
+     }
+     .pick-up {
+       dd { font-size: 4vw; text-align: left;
+        .font-l.block { display: block; text-align: center; margin: 0 auto 10px; font-weight: bold; }
+        img { display: block; margin: 0 auto 20px; }
+        br { display: none; }
+       }
+     }
+     #ownedmediabanner a img { max-width: 100%; }
+  }
+
+  #lp_centonze {
+    .ec-header li { padding: 0 !important; } 
+    .b-content__list { display: block; padding: 0 5%; box-sizing: border-box;
+      li { width: initial !important; 
+        img { width: 100%; }
+      }
+      li + li { margin-top: 5%; }
+    }
+    p img { max-width: 100%; }
+    .centonzebtn a { padding: 0 5%; box-sizing: border-box; 
+      img { width: initial; }
+    }
+  }
+}
+
+@media #{$over-middle} {
+  header .header-logo { width:initial; margin-left: 0; }
+  #lp_centonze {
+    p img { width: 100%; }
+    .b-content__list {
+      a { max-width:300px !important; margin:20px auto 0;}
+    }
+    .centonzebtn a { max-width: 300px; margin: 0 auto; }
+  }
+}
+
+.inner a img { max-width: 100%; }

@@ -15,7 +15,7 @@ body { width: 100%; height:100%; position: relative;
   .layout-center { justify-content: center; }
   @media #{$over-middle}  { font-size: 16px; line-height: $shared-lh;
     .l-flex--md { display: flex; }
-    .md-none { display: none; }
+    .md-none,.md--hidden { display: none; }
   }
   .inner-layout,.l-contentInner {
     @media #{$over-tablet} { width:98%; max-width: 1380px; margin: 0 auto; box-sizing: border-box; }
@@ -30,16 +30,16 @@ body { width: 100%; height:100%; position: relative;
 
 .list--disc li { list-style: disc; }
 
-.header--catch { background:url('/html/lp/images/bg_catch.jpg') no-repeat center center; background-size: cover;
+.header--catch { background:url('../../../images/bg_catch.jpg') no-repeat center center; background-size: cover;
   .l-contentInner { position: relative; }
   .title--page { padding-top: 80px; }
   .text--brand { position: absolute; top:0; left:0; background-color: #000; color:#fff; border-radius: 0 0 10px 10px; padding: 10px 2rem; line-height: 1; }
 
   @media #{$over-middle} {
     .l-contentInner { min-height: 700px; }
-    .text--howtoJoin { position: absolute; bottom:-60px; max-width: 55vw; }
+    .text--howtoJoin { position: absolute; bottom:-60px; max-width: 750px; }
   }
-  @media #{$small} { background: url('/html/lp/images/bg_catch_mobile.jpg') no-repeat top center; background-size: contain; 
+  @media #{$small} { background: url('../../../images/bg_catch_mobile.jpg') no-repeat top center; background-size: contain; 
     .title--page { padding-top: 21vh; max-width: 70vw; margin-left: 3%; }
     .text--howtoJoin { margin: 0 1%; }
   }
@@ -47,7 +47,7 @@ body { width: 100%; height:100%; position: relative;
 
 .wrap--introduction { background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,252,251,1) 100%); padding: 6% 0;
   .l-contentInner {
-    &::before,&::after { content:""; display: block; width: 100%; height:30px; background:url('/html/lp/images/border-introduction.png') no-repeat center center; 
+    &::before,&::after { content:""; display: block; width: 100%; height:30px; background:url('../../../images/border-introduction.png') no-repeat center center; 
        @media #{$small} { width: 96%; margin: 0 2%; background-size: contain; }
     }
     &::before { margin-bottom: 3%; }
@@ -132,20 +132,17 @@ body { width: 100%; height:100%; position: relative;
         .b-box__icon { position: relative; display: block; margin-top: -90px; margin-left: 1rem; z-index: 1; }
       }
     }
-    @media #{$small} { padding: 0 5%;
-      
-    }
   }
   @media #{$small} {
     .block--campaignDetail { flex-direction: column;
-      .b-box {
+      .b-box { padding: 0 5%;
         &__title { font-size: 5vw; line-height: 1.6; }
         &__text { 
           &.text--present { font-size: 1.8rem; margin-top: 40px;
             .b-box__icon { max-width: 30vw; }
           }
-          &.text--coupon { margin-top: 50px; font-size: 2rem;  padding-left: 0;
-            .b-box__text__span { max-width:65vw; display: block; line-height: 1.5; }
+          &.text--coupon { margin-top: 50px; font-size: 1.9rem;  padding-left: 0;
+            .b-box__text__span { max-width:70vw; display: block; line-height: 1.5; }
             .b-box__icon { margin-top: -50px; }
           }
         }
@@ -185,7 +182,7 @@ body { width: 100%; height:100%; position: relative;
       .b-block {
         &__title { font-family: $font-min; color:$accent-color-01; }
         &__text.text--catchCopy { font-size: 3rem; position: relative; color:$accent-color-01; margin-bottom: 20px;
-          &::before, &::after { content:""; width: 40%; height:3px; display: block; background:url('/html/LP/images/bg_line_title.png') repeat-x; }
+          &::before, &::after { content:""; width: 40%; height:3px; display: block; background:url('../../../images/bg_line_title.png') repeat-x; }
           &::before { margin-bottom: 15px; }
           &::after { margin-top: 15px; }
         }
@@ -221,7 +218,7 @@ body { width: 100%; height:100%; position: relative;
     }
   }
     @media #{$small} { margin:0 2%;
-      .b-wrap__title { font-size: 2.3rem; margin-top: 0; margin-bottom: 20px; padding-top: 5%;
+      .b-wrap__title { font-size: 2.1rem; margin-top: 0; margin-bottom: 20px; padding-top: 5%;
         &__strong { position: relative; padding:0; line-height: 1.4;
           &::before { content:""; display: block; background-color: #fff; width: 100%; height:30px; position: absolute; bottom:0%; left:0; right:0; z-index: 1; }
           span { position: relative; z-index: 2; }
@@ -252,8 +249,8 @@ body { width: 100%; height:100%; position: relative;
       }
       .b-block.block--andMore { padding: 2%; 
         .b-box {
-          &__title { font-size: 1.8rem; line-height: 1.5; }
-          &__text { font-size: 1.9rem; }
+          &__title { font-size: 1.7rem; line-height: 1.5; padding-left: 12px; }
+          &__text { font-size: 1.8rem; text-align: left; margin-bottom: 10px; }
         }
       }
   }
@@ -306,7 +303,7 @@ body { width: 100%; height:100%; position: relative;
     @media #{$small} { margin: 12% 2% 0;
       .b-block__title { margin-bottom: 10%;
         &__icon { flex:0 1 40px; }
-        &__strong { font-size: 2.8rem; }
+        &__strong { font-size: 2.6rem; }
       }
       .b-card {
         &__figure { flex:0 1 20%; }
@@ -314,6 +311,7 @@ body { width: 100%; height:100%; position: relative;
         .b-box {
           &__title { font-size: 2.5rem; }
           .figure--qrCode { display: none; }
+          &__link { background-color: #ff1c89; text-align: center; color:#fff; text-decoration: none; padding: 10px 20px; display: block; margin-top: 3%; border-radius: 10px; }
         }
       }
       .b-block__list.list--notice { line-height: 1.8; margin-top: 10%; }
@@ -345,7 +343,9 @@ body { width: 100%; height:100%; position: relative;
 
     &.card--03 .b-box__hashtag  { margin-top: 20px; background-color: #f39; border-radius: 10px; color:#fff; position: relative; padding: 15px 30px;
       &::before { content:""; position: absolute; top:8px; left:8px; bottom:8px; right:8px; border-radius: 8px; border: 1px solid #fff; }
-      &__list { font-size: 1.8rem; line-height: 1.7; }
+      &__list { font-size: 1.8rem; line-height: 1.7; 
+        @media #{$small} { font-size: 1.6rem; }
+      }
     }
     &.card--04 .b-box__message { background-color: #26b4fd; padding: 20px 10px 20px 30px; border-radius: 10px; align-items: center; box-sizing: border-box; margin-top: 20px; max-width: 75%;
       &__icon { flex:0 1 15%; margin-right: 6%; margin-top: 5px;  }
@@ -359,7 +359,9 @@ body { width: 100%; height:100%; position: relative;
       .b-box__text { font-size: 1.8rem; 
         &__strong { font-weight: bold; display: block; font-size: 2.4rem; margin-top: 10px; color:#ff1c89; }
       }
-      .b-card__figure { margin-left: auto; align-self: center; flex:0 1 30%; max-width: initial; }
+      .b-card__figure { margin-left: auto; align-self: center; flex:0 1 30%; max-width: initial; 
+        @media #{$small} { margin-top: 6%; }
+      }
     }
   }
 }
