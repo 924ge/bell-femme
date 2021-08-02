@@ -160,6 +160,10 @@ body .layout-center {
   }
 }
 
+.list--disc li {
+  list-style: disc;
+}
+
 .header--catch {
   background: url("/html/lp/images/bg_catch.jpg") no-repeat center center;
   background-size: cover;
@@ -607,4 +611,90 @@ body .layout-center {
 .wrap--campaign .block--campaignHeader .b-card.card--coupon {
   background-color: #fae2ee;
   margin-left: 3%;
+}
+
+.wrap--campaign .block--twitter, .wrap--campaign .block--instagram {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 3%;
+  padding: 5%;
+}
+
+.wrap--campaign .block--twitter .b-block__title, .wrap--campaign .block--instagram .b-block__title {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wrap--campaign .block--twitter .b-block__title__icon, .wrap--campaign .block--instagram .b-block__title__icon {
+  flex: 0 1 60px;
+  margin-right: 20px;
+  margin-top: 8px;
+}
+
+.wrap--campaign .block--twitter .b-block__title__strong, .wrap--campaign .block--instagram .b-block__title__strong {
+  font-size: 4rem;
+}
+
+.wrap--campaign .block--twitter .b-cardWrap, .wrap--campaign .block--instagram .b-cardWrap {
+  flex-wrap: wrap;
+}
+
+.wrap--campaign .block--twitter .b-card__figure, .wrap--campaign .block--instagram .b-card__figure {
+  flex: 0 1 20%;
+}
+
+.wrap--campaign .block--twitter .b-card .b-box, .wrap--campaign .block--instagram .b-card .b-box {
+  flex: 1;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+
+.wrap--campaign .block--twitter .b-card .b-box__title, .wrap--campaign .block--instagram .b-card .b-box__title {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.wrap--campaign .block--twitter .b-card .b-box__figure, .wrap--campaign .block--instagram .b-card .b-box__figure {
+  max-width: 150px;
+  margin-top: 30px;
+}
+
+.wrap--campaign .block--twitter .b-block__list.list--notice, .wrap--campaign .block--instagram .b-block__list.list--notice {
+  background-color: #fdeeee;
+  padding: 20px 10px 20px 50px;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+
+.wrap--campaign .block--twitter .b-card.card--01 .b-box__text, .wrap--campaign .block--twitter .b-card.card--02 .b-box__text, .wrap--campaign .block--twitter .b-card.card--03 .b-box__text {
+  font-size: 2.4rem;
+}
+
+.wrap--campaign .block--twitter .b-card.card--04 .b-box__text {
+  font-size: 1.8rem;
+}
+
+.wrap--campaign .block--twitter .b-card.card--04 .b-box__text__strong {
+  font-weight: bold;
+  display: block;
+  font-size: 2.4rem;
+  margin-top: 10px;
+  color: #ff1c89;
+}
+
+.wrap--campaign .block--twitter .b-card.card--04 .b-box__figure {
+  max-width: 85%;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap--campaign .block--twitter .b-card {
+    flex: 0 1 47%;
+  }
+  .wrap--campaign .block--twitter .b-card:nth-child(odd) {
+    margin-right: 6%;
+  }
+  .wrap--campaign .block--twitter .b-card:nth-child(n+3) {
+    margin-top: 3%;
+  }
 }
